@@ -1,21 +1,20 @@
 import random
 import time
 
-# Harfler ve Sayılar Havuzu
-karakterler = "0101010101HACKTHEPLANET01010101ADYTON"
+# Words and Numbers
+characters = "0101010101HACKTHEPLANET01010101ADYTON"
 
-print("MATRIX BAĞLANTISI KURULUYOR...")
+print("Connection Establishing...")
 time.sleep(1)
 
-# SONSUZ DÖNGÜ (PC'yi yormaz, merak etme)
+# LOOP
 while True:
-    # Ekrana rastgele karakterlerden oluşan bir satır bas
+
     satir = ""
-    for i in range(10): # Her satırda 10 blok olsun
+    for i in range(10): 
         secilen = random.choice(karakterler)
         satir += secilen + "  "
     
     print(satir)
     
-    # Çok hızlı akmasın, gözümüz görsün (0.05 saniye bekle)
     time.sleep(0.05)
